@@ -25,7 +25,9 @@ const cast = [
 
 export default function Index() {
   const [activeImage, setActiveImage] = useState<number | null>(null);
-  const [opinion, setOpinion] = useState("");
+  const [opinion, setOpinion] = useState(
+    "Редкий случай, когда российское кино захватывает с первых минут и не отпускает до титров. Финальные три секунды — настоящий катарсис. Смотреть обязательно."
+  );
   const [draft, setDraft] = useState("");
 
   return (
