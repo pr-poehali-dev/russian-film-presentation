@@ -26,7 +26,7 @@ const cast = [
 export default function Index() {
   const [activeImage, setActiveImage] = useState<number | null>(null);
   const [opinion, setOpinion] = useState(
-    "Редкий случай, когда российское кино захватывает с первых минут и не отпускает до титров. Финальные три секунды — настоящий катарсис. Смотреть обязательно."
+    "Редкий случай, когда российское кино захватывает с первых минут и не отпускает до финальных титров. «Движение вверх» — это не просто про баскетбол. Это про то, как люди остаются людьми под давлением системы, про тренера, который верит в команду, когда никто другой не верит, и про три секунды, которые вошли в историю.\n\nПочему стоит смотреть? Во-первых, это реальная история — и от этого мурашки вдвойне. Во-вторых, Владимир Машков играет так, что веришь каждому слову. В-третьих, финальный матч снят на одном дыхании — монтаж, музыка, ритм — всё работает безупречно. Выходишь из зала с ощущением, что сам только что победил."
   );
   const [draft, setDraft] = useState("");
 
@@ -183,7 +183,7 @@ export default function Index() {
               <div>
                 <div className="w-8 h-[1px] bg-[#c8a96e] mb-6" />
                 <p
-                  className="text-2xl md:text-3xl text-white leading-relaxed font-light italic mb-6"
+                  className="text-xl md:text-2xl text-white leading-relaxed font-light italic mb-6 whitespace-pre-line"
                   style={{ fontFamily: "'Cormorant', serif" }}
                 >
                   «{opinion}»
