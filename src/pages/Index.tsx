@@ -4,29 +4,29 @@ import Icon from "@/components/ui/icon";
 const galleryImages = [
   {
     src: "https://cdn.poehali.dev/projects/9ac96bb2-4c06-46b7-a4d6-f64c2ff02fbd/files/f6b41e23-46f9-4d97-8b34-ff197c50ad2f.jpg",
-    caption: "Финальные секунды матча",
+    caption: "The final seconds of the game",
   },
   {
     src: "https://cdn.poehali.dev/projects/9ac96bb2-4c06-46b7-a4d6-f64c2ff02fbd/files/19b7808f-a7a3-4d8c-84fd-9e79829d818f.jpg",
-    caption: "Команда на площадке",
+    caption: "The team on the court",
   },
   {
     src: "https://cdn.poehali.dev/projects/9ac96bb2-4c06-46b7-a4d6-f64c2ff02fbd/files/f6b41e23-46f9-4d97-8b34-ff197c50ad2f.jpg",
-    caption: "Мюнхен, 1972",
+    caption: "Munich, 1972",
   },
 ];
 
 const cast = [
-  { name: "Владимир Машков", role: "Владимир Кондрашин" },
-  { name: "Марцелас Янкаускас", role: "Паулаускас" },
-  { name: "Иван Колесников", role: "Александр Белов" },
-  { name: "Джон Сэвидж", role: "Тренер США" },
+  { name: "Vladimir Mashkov", role: "Coach Kondrashin" },
+  { name: "Marcelis Jankauskis", role: "Paulauskas" },
+  { name: "Ivan Kolesnikov", role: "Alexander Belov" },
+  { name: "John Savage", role: "USA Coach" },
 ];
 
 export default function Index() {
   const [activeImage, setActiveImage] = useState<number | null>(null);
   const [opinion, setOpinion] = useState(
-    "Редкий случай, когда российское кино захватывает с первых минут и не отпускает до финальных титров. «Движение вверх» — это не просто про баскетбол. Это про то, как люди остаются людьми под давлением системы, про тренера, который верит в команду, когда никто другой не верит, и про три секунды, которые вошли в историю.\n\nПочему стоит смотреть? Во-первых, это реальная история — и от этого мурашки вдвойне. Во-вторых, Владимир Машков играет так, что веришь каждому слову. В-третьих, финальный матч снят на одном дыхании — монтаж, музыка, ритм — всё работает безупречно. Выходишь из зала с ощущением, что сам только что победил."
+    "This movie is really special. It is not just about basketball — it is about people who never give up, even when everything seems impossible. The coach believes in his team when nobody else does. The players fight not just for a medal, but for their families and their country.\n\nWhy should you watch it? First, it is a true story — and that makes it even more exciting. Second, the acting is great and easy to follow. Third, the final game is so tense that you will be sitting on the edge of your seat. When the last three seconds play out, you will feel like YOU just won."
   );
   const [draft, setDraft] = useState("");
 
@@ -46,21 +46,21 @@ export default function Index() {
 
         <div className="relative z-10 px-6 md:px-16 pb-20 max-w-5xl">
           <div className="text-[11px] tracking-[0.3em] uppercase text-[#c8a96e] mb-6 font-light">
-            Презентация фильма
+            Movie Presentation
           </div>
           <h1
             className="text-[72px] md:text-[120px] leading-[0.9] font-bold uppercase text-white mb-6"
             style={{ fontFamily: "'Oswald', sans-serif", letterSpacing: "-1px" }}
           >
-            Движение
+            Going
             <br />
-            <span className="text-[#c8a96e]">Вверх</span>
+            <span className="text-[#c8a96e]">Vertical</span>
           </h1>
           <p
             className="text-xl md:text-2xl text-[#a09880] font-light italic max-w-lg"
             style={{ fontFamily: "'Cormorant', serif" }}
           >
-            История одной победы, которая изменила всё
+            The story of one victory that changed everything
           </p>
         </div>
 
@@ -70,32 +70,32 @@ export default function Index() {
         </div>
       </section>
 
-      {/* ТИП И РЕЖИССЁР */}
+      {/* GENRE & DIRECTOR */}
       <section className="px-6 md:px-16 py-20 max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
-            <div className="text-[10px] tracking-[0.3em] uppercase text-[#c8a96e] mb-4">Жанр</div>
+            <div className="text-[10px] tracking-[0.3em] uppercase text-[#c8a96e] mb-4">Genre</div>
             <h2
               className="text-4xl md:text-5xl font-semibold text-white mb-4"
               style={{ fontFamily: "'Oswald', sans-serif" }}
             >
-              Исторический спортивный фильм
+              Historical Sports Drama
             </h2>
             <p className="text-[#6e6860] text-sm leading-relaxed">
-              Биографическая драма на реальных событиях
+              A biographical drama based on real events
             </p>
           </div>
 
           <div className="md:border-l border-[#1e1e1e] md:pl-16">
-            <div className="text-[10px] tracking-[0.3em] uppercase text-[#c8a96e] mb-4">Режиссёр</div>
+            <div className="text-[10px] tracking-[0.3em] uppercase text-[#c8a96e] mb-4">Director</div>
             <h2
               className="text-4xl md:text-5xl font-semibold text-white mb-4"
               style={{ fontFamily: "'Oswald', sans-serif" }}
             >
-              Антон Мегердичев
+              Anton Megerdichev
             </h2>
             <p className="text-[#6e6860] text-sm leading-relaxed">
-              Российский кинорежиссёр и сценарист. Снял также «Метро», «Бой с тенью 2».
+              Russian film director and screenwriter. Also known for "Metro" and "Shadow Boxing 2".
             </p>
           </div>
         </div>
@@ -103,9 +103,9 @@ export default function Index() {
         <div className="mt-12 h-[1px] bg-[#1e1e1e]" />
       </section>
 
-      {/* ГЛАВНЫЕ РОЛИ */}
+      {/* MAIN CAST */}
       <section className="px-6 md:px-16 py-10 max-w-5xl mx-auto">
-        <div className="text-[10px] tracking-[0.3em] uppercase text-[#c8a96e] mb-12">Главные роли</div>
+        <div className="text-[10px] tracking-[0.3em] uppercase text-[#c8a96e] mb-12">Main Cast</div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-0">
           {cast.map((actor, i) => (
             <div
@@ -127,29 +127,29 @@ export default function Index() {
         <div className="mt-0 h-[1px] bg-[#1e1e1e]" />
       </section>
 
-      {/* О ФИЛЬМЕ */}
+      {/* ABOUT */}
       <section className="px-6 md:px-16 py-20 max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <div className="text-[10px] tracking-[0.3em] uppercase text-[#c8a96e] mb-4">О фильме</div>
+            <div className="text-[10px] tracking-[0.3em] uppercase text-[#c8a96e] mb-4">About the Film</div>
           </div>
           <div className="md:col-span-2">
             <p
               className="text-2xl md:text-3xl text-white leading-relaxed font-light italic mb-8"
               style={{ fontFamily: "'Cormorant', serif" }}
             >
-              «Движение вверх» — советская сборная по баскетболу против команды США на Олимпиаде 1972 года в Мюнхене.
+              "Going Vertical" — the Soviet basketball team vs. the USA at the 1972 Olympics in Munich.
             </p>
             <p className="text-[#a09880] leading-relaxed text-base font-light">
-              Финальный матч, вошедший в историю как один из самых захватывающих в истории баскетбола. Советская команда под руководством тренера Владимира Кондрашина впервые обыграла непобедимых американцев в самые последние секунды игры. Фильм рассказывает не только о спорте, но и о людях — их судьбах, семьях, преодолении и вере в победу.
+              The final game is one of the most exciting in basketball history. The Soviet team, led by coach Vladimir Kondrashin, beat the undefeated Americans in the very last seconds of the game. The film is not only about sport — it is about real people, their families, their struggles, and their belief that winning is possible.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ГАЛЕРЕЯ */}
+      {/* GALLERY */}
       <section className="px-6 md:px-16 py-10 max-w-5xl mx-auto">
-        <div className="text-[10px] tracking-[0.3em] uppercase text-[#c8a96e] mb-10">Галерея кадров</div>
+        <div className="text-[10px] tracking-[0.3em] uppercase text-[#c8a96e] mb-10">Gallery</div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           {galleryImages.map((img, i) => (
             <div
@@ -172,11 +172,11 @@ export default function Index() {
         </div>
       </section>
 
-      {/* МНЕНИЕ */}
+      {/* OPINION */}
       <section className="px-6 md:px-16 py-20 max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <div className="text-[10px] tracking-[0.3em] uppercase text-[#c8a96e] mb-4">Ваше мнение</div>
+            <div className="text-[10px] tracking-[0.3em] uppercase text-[#c8a96e] mb-4">My Opinion</div>
           </div>
           <div className="md:col-span-2">
             {opinion ? (
@@ -186,20 +186,20 @@ export default function Index() {
                   className="text-xl md:text-2xl text-white leading-relaxed font-light italic mb-6 whitespace-pre-line"
                   style={{ fontFamily: "'Cormorant', serif" }}
                 >
-                  «{opinion}»
+                  "{opinion}"
                 </p>
                 <button
                   onClick={() => { setOpinion(""); setDraft(""); }}
                   className="text-[10px] tracking-[0.2em] uppercase text-[#3e3e3e] hover:text-[#c8a96e] transition-colors"
                 >
-                  Изменить
+                  Edit
                 </button>
               </div>
             ) : (
               <div className="space-y-4">
                 <textarea
                   className="w-full bg-transparent border-b border-[#2e2e2e] text-[#e8e0d0] placeholder-[#3e3e3e] resize-none focus:outline-none focus:border-[#c8a96e] transition-colors py-3 text-base font-light leading-relaxed"
-                  placeholder="Напишите своё мнение о фильме..."
+                  placeholder="Write your opinion about the film..."
                   rows={4}
                   value={draft}
                   onChange={(e) => setDraft(e.target.value)}
@@ -209,7 +209,7 @@ export default function Index() {
                   onClick={() => { if (draft.trim()) setOpinion(draft.trim()); }}
                   className="text-[11px] tracking-[0.3em] uppercase text-[#c8a96e] border border-[#c8a96e] px-6 py-3 hover:bg-[#c8a96e] hover:text-[#0a0a0a] transition-all duration-300"
                 >
-                  Сохранить
+                  Save
                 </button>
               </div>
             )}
@@ -223,10 +223,10 @@ export default function Index() {
           className="text-[11px] tracking-[0.2em] uppercase text-[#3e3e3e]"
           style={{ fontFamily: "'Oswald', sans-serif" }}
         >
-          Движение вверх · 2017
+          Going Vertical · 2017
         </div>
         <div className="text-[11px] text-[#3e3e3e]">
-          Россия · 135 мин · 12+
+          Russia · 135 min · 12+
         </div>
       </footer>
 
